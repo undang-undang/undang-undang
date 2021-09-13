@@ -1,0 +1,51 @@
+.catalog {
+  text-align: center;
+  /* padding: 4rem; */
+  background-color: var(--primary);
+  position: relative;
+}
+
+.catalog > .waves {
+  transform: rotate(180deg);
+  top: -10px;
+}
+
+.catalog > h1 {
+  padding-top: 12rem;
+}
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.catalog-item {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.catalog-item > img {
+  width: 100%;
+  transform: scale(1);
+  transition: transform 500ms ease;
+}
+
+.catalog-item > img:hover {
+  transform: scale(1.1);
+}
+
+.catalog-item > button {
+  width: 180px;
+  border: none;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 10px;
+  padding: .4rem 0;
+  font-size: .8rem;
+  margin: 1rem 0px;
+  cursor: pointer;
+}

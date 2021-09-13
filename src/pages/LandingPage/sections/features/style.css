@@ -1,0 +1,49 @@
+.features > .waves {
+  transform: rotate(180deg);
+}
+
+.features {
+  text-align: center;
+  background-color: #e2e0de;
+  padding-top: 12rem;
+  width: 100%;
+}
+
+.features .icon {
+  background-color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.features .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  padding: .5rem;
+  transform: translateY(0px);
+  transition: all 500ms ease;
+}
+
+.features .item .text h2{
+  margin: .5rem 0px;
+}
+
+.features .item .text p {
+  font-size: .7rem;
+}
+
+@media screen and (max-width: 464px) {
+  .features {
+    padding-top: 4rem;
+  }
+
+  .features .grid {
+    display: unset;
+  }
+}
+
+/* .features-item:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-5px);
+} */

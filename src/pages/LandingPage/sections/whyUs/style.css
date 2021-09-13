@@ -1,0 +1,57 @@
+.why-us > .content-padding {
+  text-align: center;
+  background-color: var(--primary);
+  position: relative;
+  padding-top: 0px;
+}
+
+@media screen and (max-width: 464px) {
+  .why-us > .content-padding {
+    padding: 0px;
+  }
+}
+
+.why-us > .waves {
+  transform: rotate(180deg);
+}
+
+.heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart-m {
+  width: 4rem;
+  margin: 1rem .5rem;
+}
+
+.heart-s {
+  width: 2.7rem;
+}
+
+.why-us p {
+  font-size: .8rem;
+}
+
+.why-us p b {
+  font-size: .8rem;
+}
+
+.reason {
+  width: 100%;
+  border-radius: 10px;
+  padding: 1rem;
+  color: white;
+  background-color: #c79f5b;
+}
+
+@media screen and (max-width: 464px) {
+  .reason {
+    padding: 0px;
+  }
+
+  .reason h3 {
+    font-size: .9rem;
+  }
+}

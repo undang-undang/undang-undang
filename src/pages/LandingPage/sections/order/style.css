@@ -1,0 +1,58 @@
+.order {
+  padding: 0 4rem;
+  text-align: center;
+}
+.order-step img {
+  margin-bottom: 1rem;
+  width: 100px;
+  height: 100px;
+}
+
+.order-options {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0px;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.order-options p {
+  font-size: .8rem;
+  line-height: 1.5rem;
+}
+
+.order-options button {
+  width: 80%;
+  padding: 16px 0px;
+  border-radius: 50px;
+  border: none;
+  margin: 1rem 0;
+}
+
+.order-options:nth-child(odd) button {
+  background-color: #fff;
+  border: 3px solid #fb8c00;
+}
+
+.order-options:nth-child(2) {
+  flex: 1;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.order-options:nth-child(2) button {
+  background: #fb8c00;
+  color: #fff;
+}
+
+.best-deal {
+  background: #fb8c00;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  position: absolute;
+  width: 100%;
+  top: -80px;
+  padding: 8px 0px;
+  color: #fff;
+  font-weight: 500;
+}

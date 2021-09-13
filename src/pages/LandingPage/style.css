@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+  --primary: #F9F7F7;
+  --secondary: #FFE2E2;
+  --white: #fff;
+  --shadow: 0px 18px 29px -13px rgb(0 0 0 / 28%);
+  --footer-bg: #61C0BF;
+  --header-bg: #fff;
+  --h1-primary: #F6F6F6;
+}
+
+h2, h3, p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.header-layer {
+  height: 60px;
+  width: 100%;
+}
+
+header {
+  height: 60px;
+  background-color: var(--header-bg);
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  box-shadow: var(--shadow);
+}
+
+header ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+header ul li:nth-child(1) {
+  margin-left: auto;
+}
+
+.fc-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.content-padding {
+  padding: 0px 4rem;
+}
+
+.waves-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: .6;
+}
+
+.waves-2 {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+.waves-3 {
+  left: 0;
+  bottom: 0px;
+  position: absolute;
+}
+
+.waves-3 path {
+  fill: rgb(0 0 0 / 15%);
+  filter: blur(10px);
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: #fff;
+  border: 8px solid #ffc96c;
+  margin-bottom: .5rem;
+}
+
+footer {
+  padding: 50px;
+  background-color: var(--footer-bg);
+  text-align: center;
+}
