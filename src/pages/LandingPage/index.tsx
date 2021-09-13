@@ -3,8 +3,8 @@ import React from "react";
 import Features from './sections/features';
 import Hero from './sections/hero';
 import WhyUs from './sections/whyUs';
-import Catalog from './sections/catalog';
-import Order from './sections/order';
+// import Catalog from './sections/catalog';
+// import Order from './sections/order';
 import './style.css';
 
 const LandingPage: React.FC = () => {

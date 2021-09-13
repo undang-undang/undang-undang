@@ -7,6 +7,11 @@ const features = [
     desc: 'Nama tamu undangan akan tercantum pada halaman pertama undangan digitalmu, sehingga undangan akan terasa lebih personal.'
   },
   {
+    icon: Icons.saveDate,
+    title: 'Save The Date',
+    desc: 'Tamu undangan dapat menyimpan pengingat acara pernikahanmu dalam Google Calendar mereka.'
+  },
+  {
     icon: Icons.countdown,
     title: 'Countdown Acara',
     desc: 'Menghitung mundur momen istimewamu agar lebih mudah diingat tamu undangan.'
@@ -42,19 +47,14 @@ const features = [
     desc: 'Terdapat background musik pada undangan digital kamu.'
   },
   {
-    icon: Icons.gmaps,
-    title: 'Google Maps',
-    desc: 'Fitur yang akan memudahkan tamu undangan saat mencari lokasi acara, karena terintegrasi dengan Google Maps.'
-  },
-  {
     icon: Icons.wedWish,
     title: 'Wedding Wishes',
     desc: 'Ucapan dan doa untuk hari istimewamu dari tamu undangan.'
   },
   {
-    icon: Icons.saveDate,
-    title: 'Save The Date',
-    desc: 'Tamu undangan dapat menyimpan pengingat acara pernikahanmu dalam Google Calendar mereka.'
+    icon: Icons.gmaps,
+    title: 'Google Maps',
+    desc: 'Fitur yang akan memudahkan tamu undangan saat mencari lokasi acara, karena terintegrasi dengan Google Maps.'
   },
   {
     icon: Icons.loveQuotes,
