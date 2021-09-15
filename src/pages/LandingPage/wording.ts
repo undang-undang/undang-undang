@@ -1,4 +1,24 @@
-import * as Icons from 'assets/icons';
+import * as Icons from 'assets/icons'
+
+const orders = {
+  steps: [
+    {
+      icon: Icons.order,
+      title: 'Lakukan Pemesanan',
+      desc: 'Pilih paket kemudian hubungi tim undang-undang.com melalui nomor W.A'
+    },
+    {
+      icon: Icons.progress,
+      title: 'Proses Produksi',
+      desc: 'Undang-undang akan membuat undangan digitalmu dengan waktu paling lama 4 hari.'
+    },
+    {
+      icon: Icons.shipping,
+      title: 'Pengiriman Link',
+      desc: 'Undangan digital kamu akan akan dikirimkan berupa link website ke nomor WhatsApp kamu.'
+    },
+  ]
+}
 
 const features = [
   {
@@ -63,4 +83,42 @@ const features = [
   },
 ]
 
-export default features
+const reasons = [
+  {
+    icon: Icons.affordable,
+    title: 'Biaya Terjangkau',
+    desc: 'Mulai dari Rp 149.000,- kamu bisa mendapatkan undangan digital ekslusif dengan berbagai fitur dan kelebihan.'
+  },
+  {
+    icon: Icons.fast,
+    title: 'Proses Cepat',
+    desc: 'Proses pengerjaan undangan digital maksimal 4 hari setelah data yang kami terima sudah lengkap.'
+  },
+  {
+    icon: Icons.best,
+    title: 'Pelayanan terbaik',
+    desc: 'Team kami akan selalu memberika pelayanan yang terbaik untuk memaksimalkan kepuasan kamu.'
+  },
+  {
+    icon: Icons.premium,
+    title: 'Tema Undangan Premium',
+    desc: 'Desain premium dibuat khusus oleh tim kami, bukan desain template yang beredar dipasaran.'
+  },
+  {
+    icon: Icons.customizeable,
+    title: 'Customizable',
+    desc: 'Kamu dapat mengubah tema warna maupun background pattern sesuai dengan keinginan kamu.'
+  },
+  {
+    icon: Icons.unlimited,
+    title: 'Unlimited Revisi',
+    desc: 'Revisi tidak terbatas untuk memastikan undangan digital yang kamu bikin sudah sesuai dengan keinginan kamu.'
+  },
+]
+
+export {
+  features,
+  orders,
+  reasons
+
+}

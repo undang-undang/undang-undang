@@ -1,0 +1,23 @@
+.header-layer {
+  height: 60px;
+  width: 100%;
+}
+
+header {
+  height: 60px;
+  background-color: var(--header-bg);
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  box-shadow: var(--shadow);
+}
+
+header ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+header ul li:nth-child(1) {
+  margin-left: auto;
+}

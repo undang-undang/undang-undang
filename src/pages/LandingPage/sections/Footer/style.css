@@ -1,0 +1,19 @@
+footer {
+  padding: 4rem;
+  background-color: var(--footer-bg);
+  text-align: center;
+}
+
+@media screen and (max-width: 464px) {
+  footer {
+    padding: 1rem;
+  }
+
+  footer h1 {
+    font-size: 2rem;
+  }
+
+  footer .about-us {
+    font-size: .7rem;
+  }
+}

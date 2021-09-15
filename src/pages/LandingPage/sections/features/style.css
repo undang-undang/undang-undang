@@ -1,20 +1,11 @@
-.features > .waves {
-  transform: rotate(180deg);
-}
-
 .features {
   text-align: center;
-  background-color: #e2e0de;
-  width: 100%;
+  background-color: var(--grey100);
+  padding-top: 12rem;
 }
 
-.features .grid {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.features .icon {
-  background-color: #ffffff;
-  margin-bottom: 0px;
+.features > .waves {
+  transform: rotate(180deg);
 }
 
 .features .item {
@@ -28,12 +19,8 @@
   transition: all 500ms ease;
 }
 
-.features .item .text h2{
+.features .item .text h3 {
   margin: .5rem 0px;
-}
-
-.features .item .text p {
-  font-size: .7rem;
 }
 
 @media screen and (max-width: 1024px) {

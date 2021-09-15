@@ -24,6 +24,9 @@ import order from 'assets/icons/order/order.svg';
 import progress from 'assets/icons/order/progress.svg';
 import shipping from 'assets/icons/order/shipping.svg';
 
+import arrow from 'assets/icons/arrow.svg';
+import love from 'assets/icons/love.svg';
+
 export {
   // why us
   customizeable,
@@ -51,5 +54,9 @@ export {
   // order
   order,
   progress,
-  shipping
+  shipping,
+
+  // util
+  arrow,
+  love
 }

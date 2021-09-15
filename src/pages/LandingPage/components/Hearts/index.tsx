@@ -1,6 +1,8 @@
-import React from "react";
+import React from 'react'
 
-const Hearts:React.FC = () => {
+import './style.css'
+
+const Hearts: React.FC = () => {
   return (
     <div className='heart'>
       <svg version="1.1" className='heart-s' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 2034 1644.88" enableBackground="new 0 0 2034 1644.88">

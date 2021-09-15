@@ -1,19 +1,24 @@
 .order {
-  padding: 0 4rem;
+  padding: 12rem 4rem 4rem 4rem;
   text-align: center;
 }
-.order-step img {
-  margin-bottom: 1rem;
-  width: 100px;
-  height: 100px;
+
+#order-section {
+  margin-bottom: 2rem;
 }
 
 .order-options {
-  width: 100%;
+  width: 400px;
   height: 100%;
   padding: 2rem 0px;
   border-radius: 1rem;
   box-shadow: var(--shadow);
+}
+
+.order-options:nth-child(2) {
+  height: calc(100% + 50px);
+  transform: translateY(-50px);
+  border: 4px solid var(--orange100);
 }
 
 .order-options p {
@@ -22,37 +27,79 @@
 }
 
 .order-options button {
-  width: 80%;
-  padding: 16px 0px;
-  border-radius: 50px;
-  border: none;
-  margin: 1rem 0;
+  margin: 1rem auto;
 }
 
 .order-options:nth-child(odd) button {
   background-color: #fff;
-  border: 3px solid #fb8c00;
-}
-
-.order-options:nth-child(2) {
-  flex: 1;
-  border-radius: 1rem;
-  position: relative;
+  border: 3px solid var(--orange100);
 }
 
 .order-options:nth-child(2) button {
-  background: #fb8c00;
+  background: var(--orange100);
   color: #fff;
 }
 
+.order-step .icon{
+  margin: auto;
+}
+
+.order-step h3 {
+  margin-top: .5rem;
+}
+
+.gold {
+  padding-top: 2rem;
+}
+
 .best-deal {
-  background: #fb8c00;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  background: var(--orange100);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
   position: absolute;
-  width: 100%;
-  top: -80px;
+  width: calc(100% + 2px);
+  top: -49px;
+  left: -1px;
   padding: 8px 0px;
   color: #fff;
   font-weight: 500;
+}
+
+@media screen and (max-width: 464px) {
+  .order {
+    padding: 4rem 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .order .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+
+  #order-section {
+    margin-bottom: 0px;
+  }
+
+  .order .grid {
+    display: block;
+  }
+
+  .order-options {
+    width: 100%;
+    border-top: 1px solid var(--orange100);
+    border-left: 1px solid var(--orange100);
+    box-shadow: 0px 9px 14px -7px rgb(0 0 0 / 28%);;
+  }
+
+  .order-options button {
+    box-shadow: 0px 5px 5px #fb8a003b;
+  }
+
+  .order-options:nth-child(odd) button {
+    border-width: 1px;
+  }
+
+  .order-options:nth-child(2) {
+    margin-top: 4rem;
+    border-width: 2px;
+  }
 }

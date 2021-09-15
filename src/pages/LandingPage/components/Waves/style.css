@@ -1,0 +1,22 @@
+.waves-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: .6;
+}
+
+.waves-2 {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+.waves-3 {
+  left: 0;
+  bottom: 0px;
+  position: absolute;
+}
+
+.waves-3 path {
+  fill: rgb(0 0 0 / 15%);
+  filter: blur(10px);
+}

@@ -1,38 +1,27 @@
-import React from "react";
+import React, { lazy } from 'react'
 
-import Features from './sections/features';
-import Hero from './sections/hero';
-import WhyUs from './sections/whyUs';
-// import Catalog from './sections/catalog';
-// import Order from './sections/order';
-import './style.css';
+import './style.css'
+
+const Header = lazy( () => import( './sections/Header' ))
+const Hero = lazy( () => import( './sections/Hero' ))
+const WhyUs = lazy( () => import( './sections/WhyUs' ))
+const Features = lazy( () => import( './sections/Features' ))
+const Order = lazy( () => import( './sections/Order' ))
+const Footer = lazy( () => import( './sections/Footer' ))
+
 
 const LandingPage: React.FC = () => {
   return (
     <div>
-      {/* <header>
-        <ul>
-          <li>Fitur</li>
-          <li>Katalog</li>
-        </ul>
-      </header>
-      <div className='header-layer' /> */}
-
+      <Header />
       <Hero />
       <WhyUs />
       <Features />
-      {/* <Catalog />
-      <Order /> */}
-
-
-      {/* <footer>
-        Undang-Undang merupakan jasa penyedia layanan pembuatan undangan pernikahan digital atau undangan pernikahan online yang berbentuk undangan website.<br />
-        Sistem order mudah dan cepat, didukung dengan team yang berpengalaman.
-        <h2>Anda sudah tidak sabar lagi untuk memesan undangannya kan?</h2>
-        <h1>Segera hubungi kami untuk pemesanan</h1>
-      </footer> */}
+      {/* <Catalog /> */}
+      <Order />
+      <Footer />
     </div>
   )
 }
 
-export default LandingPage;
+export default LandingPage

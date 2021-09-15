@@ -1,0 +1,14 @@
+.heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart-m {
+  width: 4rem;
+  margin: 1rem .5rem;
+}
+
+.heart-s {
+  width: 2.7rem;
+}
