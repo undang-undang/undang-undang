@@ -1,17 +1,17 @@
 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13 56C17.4183 56 21 52.4183 21 48C21 43.5817 17.4183 40 13 40C8.58172 40 5 43.5817 5 48C5 52.4183 8.58172 56 13 56Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M44 50C48.4183 50 52 46.4183 52 42C52 37.5817 48.4183 34 44 34C39.5817 34 36 37.5817 36 42C36 46.4183 39.5817 50 44 50Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M21 48.0002V14.5532L52 4.46924V42.0002" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M9 4V9" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M9 13V18" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M16 11H11" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M7 11H2" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M13 44C10.791 44 9 45.791 9 48" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M44 38C41.791 38 40 39.791 40 42" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M21 25.5528L48.67 16.7168" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M58 32H56V34H58V32Z" fill="black"/>
-<path d="M58 36H56V38H58V36Z" fill="black"/>
-<path d="M58 40H56V42H58V40Z" fill="black"/>
-<path d="M17 37V34" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M17 32V22" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M13 56C17.4183 56 21 52.4183 21 48C21 43.5817 17.4183 40 13 40C8.58172 40 5 43.5817 5 48C5 52.4183 8.58172 56 13 56Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M44 50C48.4183 50 52 46.4183 52 42C52 37.5817 48.4183 34 44 34C39.5817 34 36 37.5817 36 42C36 46.4183 39.5817 50 44 50Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M21 48.0002V14.5532L52 4.46924V42.0002" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M9 4V9" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M9 13V18" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M16 11H11" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M7 11H2" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M13 44C10.791 44 9 45.791 9 48" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M44 38C41.791 38 40 39.791 40 42" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M21 25.5528L48.67 16.7168" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M58 32H56V34H58V32Z" fill="white"/>
+<path d="M58 36H56V38H58V36Z" fill="white"/>
+<path d="M58 40H56V42H58V40Z" fill="white"/>
+<path d="M17 37V34" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M17 32V22" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
 </svg>

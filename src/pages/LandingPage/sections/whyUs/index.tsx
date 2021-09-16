@@ -69,7 +69,6 @@ const WhyUs: React.FC = () => {
           infinite
           swipeable
           draggable
-          itemClass='carousel-item'
           showDots
           arrows={false}
           customButtonGroup={<ButtonGroup />}

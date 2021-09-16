@@ -6,11 +6,6 @@
   padding: 0px 4rem;
 }
 
-.carousel-item {
-  display: flex;
-  padding: 0px 16px;
-}
-
 .why-us > .waves {
   transform: rotate(180deg);
 }
@@ -35,15 +30,10 @@
   .reason {
     background-color: #fff;
     color: #000000;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
-  .reason h3 {
-    font-size: .7rem;
-  }
-  
   .reason p {
-    font-size: .6rem;
     padding: 0 1rem;
   }
 
@@ -64,14 +54,14 @@
   }
 
   .custom-arrow {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50px;
     position: absolute;
   }
   
   .arrow-left {
-    left: 5px;
+    left: 10px;
   }
 
   .arrow-left img {
@@ -79,6 +69,6 @@
   }
   
   .arrow-right {
-    right: 5px;
+    right: 10px;
   }
 }

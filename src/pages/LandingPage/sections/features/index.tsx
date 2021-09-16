@@ -35,21 +35,29 @@ const Features: React.FC = () => {
   }
 
   const onClickViewMore = () => {
-    setViewMore(true)
+    setViewMore(!viewMore)
+
+    document.getElementById('see-all')?.scrollIntoView()
   }
 
   return (
     <section ref={ref} className='features'>
-      <h2>Fitur Undangan Online</h2>
-      <p className='mb-1'>Fitur-fitur yang akan membuat undangan pernikahan digital kamu terlihat ekslusif.</p>
+      <div className='ph-1'>
+        <h2 id='see-all' >Fitur Undangan Online</h2>
+        <p className='mb-1'>Fitur-fitur yang akan membuat undangan pernikahan digital kamu terlihat ekslusif.</p>
+      </div>
       
       <div className='grid'>
         {renderFeatures()}
       </div>
 
-      {!viewMore && <p onClick={onClickViewMore}>Lihat Semua</p> }
+      <div className='view-all'  onClick={onClickViewMore}>
+        {
+          viewMore ? 'Tutup Sebagian' : 'Lihat Semua'
+        }
+      </div>
 
-      <Waves color='#e2e0de' />
+      <Waves color='#ebebeb' />
     </section>
   )
 }
