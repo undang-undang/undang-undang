@@ -1,5 +1,5 @@
 .order {
-  padding: 17rem 4rem 4rem 4rem;
+  padding-top: 22vw;
   text-align: center;
 }
 
@@ -63,14 +63,50 @@
   font-weight: 500;
 }
 
+.price p {
+  text-decoration: line-through;
+}
+
 .whatsapp {
   margin-right: 12px;
 }
 
+.carousel-container {
+  width: 100%;
+}
+
+.carousel-items {
+  display: flex;
+  padding: 0px .5rem;
+  padding-bottom: 1.5rem;
+  height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .order .grid div {
+    width: calc(50% - 24px);
+  }
+
+  .order-step .icon {
+    width: 100px !important;
+  }
+
+  .order .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order-step .icon {
+    width: 80px !important;
+  }
+}
+
 @media screen and (max-width: 464px) {
   .order {
-    padding: 4rem 0px;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
 
   .order .mb-4 {
@@ -106,14 +142,27 @@
     padding-top: 1.5rem;
   }
 
-  .carousel-container {
-    width: 100%;
+  .carousel-items {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
-  .carousel-items {
-    display: flex;
-    padding: 0px 1.5rem;
-    padding-bottom: 1.5rem;
-    height: 100%;
+  .custom-arrow {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    position: absolute;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    box-shadow: unset;
+  }
+
+  .arrow-left {
+    left: 5px;
+  }
+
+  .arrow-right {
+    right: 5px;
   }
 }

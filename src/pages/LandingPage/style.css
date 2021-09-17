@@ -14,6 +14,8 @@
 
   --orange100: #fb8c00;
 
+  --max-width: 2048px;
+
   --secondary: #FFE2E2;
   --footer-bg: #61C0BF;
   --header-bg: #fff;
@@ -39,6 +41,10 @@ h3 {
 }
 
 p {
+  font-size: 1rem;
+}
+
+p > b {
   font-size: 1rem;
 }
 
@@ -88,15 +94,21 @@ p {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1rem;
   row-gap: 1rem;
+  padding: 0px 1rem;
 }
 
 .content-padding {
   padding: 0px 4rem;
 }
 
+.max-width {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
 .icon {
-  width: 4rem;
-  height: 4rem;
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,6 +130,45 @@ button {
   background-color: transparent;
 }
 
+.custom-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  margin: 0px 4px;
+  border-radius: 50px;
+}
+
+.dot-active {
+  background-color: var(--orange100);
+}
+
+.dot-inactive {
+  background-color: var(--brown100);
+}
+
+.custom-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  position: absolute;
+  padding: 5px;
+  border: 2px solid var(--orange100);
+  background-color: var(--white100);
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 28%);
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-left img {
+  transform: rotate(-180deg);
+}
+
+.arrow-right {
+  right: 10px;
+}
+
 @media screen and (min-width: 1024px) {
   button:hover {
     box-shadow: var(--shadow);
@@ -125,7 +176,29 @@ button {
   }
 }
 
-@media screen and (max-width: 464px) {
+@media screen and (max-width: 1024px) {
+  h2 {
+  font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: .8rem;
+  }
+
+  p > b {
+    font-size: .8rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 2.5rem;
   }

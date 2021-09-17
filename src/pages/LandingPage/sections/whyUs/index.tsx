@@ -3,6 +3,7 @@ import Carousel, { ButtonGroupProps, DotProps } from 'react-multi-carousel'
 import { useResizeDetector } from 'react-resize-detector'
 
 import * as Icons from 'assets/icons'
+import { ScrollAnimation } from 'components'
 
 import { reasons } from '../../wording'
 import Waves from '../../components/Waves'
@@ -28,16 +29,20 @@ const responsive = {
 const WhyUs: React.FC = () => {
   const { width, ref } = useResizeDetector()
 
-  const renderReasons = () => {
-    return reasons.map( reason => (
-      <div key={reason.title} className='reason fc-center'>
+  const renderReasons = (isCarousel = false) => {
+    return reasons.map( reason => {
+      const content = <div key={reason.title} className='reason'>
         <div className='icon'>
           <img src={reason.icon} alt='' />
         </div>
         <h3>{reason.title}</h3>
         <p>{reason.desc}</p>
       </div>
-    ) )
+
+      if (isCarousel) return content;
+
+      return <ScrollAnimation key={reason.title}>{content}</ScrollAnimation>
+    })
   }
 
   const ButtonGroup = ( { next, previous }: ButtonGroupProps ) => {
@@ -62,7 +67,7 @@ const WhyUs: React.FC = () => {
   }
 
   const renderContent = () => {
-    if ( width && width < 1025) {
+    if ( width && width < 465) {
       return (
         <Carousel
           responsive={responsive}
@@ -75,7 +80,7 @@ const WhyUs: React.FC = () => {
           customDot={<CustomDot />}
           centerMode={ width && width < 768 ? false : true }
         >
-          {renderReasons()}
+          {renderReasons(true)}
         </Carousel>
       )
     }
@@ -89,19 +94,21 @@ const WhyUs: React.FC = () => {
 
   return (
     <section ref={ref} className='why-us'>
-      <div className='inner-padding'>
-        <p>
-          Kamu sebentar lagi mau menikah?<br />
-          Bingung cari jasa pembuatan undangan digital atau undangan online dengan harga murah dan kualitas premium?<br />
-          <b>Yuk cobain jasa dari kami!</b>
-        </p>
+      <div className='max-width'>
+        <div className='inner-padding'>
+          <p>
+            Kamu sebentar lagi mau menikah?<br />
+            Bingung cari jasa pembuatan undangan digital atau undangan online dengan harga murah dan kualitas premium?<br />
+            <b>Yuk cobain jasa dari kami!</b>
+          </p>
 
-        <Hearts />
+          <Hearts />
 
-        <h2 className='mb-1'>Mengapa harus undang-undang.com?</h2>
+          <h2>Mengapa harus undang-undang.com?</h2>
+        </div>
+
+        { renderContent() }
       </div>
-
-      { renderContent() }
 
       <Waves />
     </section>

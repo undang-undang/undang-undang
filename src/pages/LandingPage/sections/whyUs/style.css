@@ -3,7 +3,7 @@
 }
 
 .inner-padding {
-  padding: 0px 4rem;
+  padding: 1rem 4rem;
 }
 
 .why-us > .waves {
@@ -12,14 +12,29 @@
 
 .reason {
   width: 100%;
+  height: 100%;
+  padding: 1rem;
   border-radius: 10px;
-  padding: 1.5rem 1rem;
   color: var(--white100);
   background-color: var(--brown200);
 }
 
+.reason .icon {
+  margin: auto;
+}
+
 .reason h3 {
   margin: .5rem 0px;
+}
+
+@media screen and (max-width: 1100px) {
+  .reason {
+    padding: .5rem;
+  }
+
+  .inner-padding {
+    padding: 1rem;
+  }
 }
 
 @media screen and (max-width: 464px) {
@@ -35,40 +50,5 @@
 
   .reason p {
     padding: 0 1rem;
-  }
-
-  .custom-dot {
-    width: 10px;
-    height: 10px;
-    padding: 0px;
-    margin: 0px 4px;
-    border-radius: 50px;
-  }
-
-  .dot-active {
-    background-color: var(--orange100);
-  }
-  
-  .dot-inactive {
-    background-color: var(--brown100);
-  }
-
-  .custom-arrow {
-    width: 25px;
-    height: 25px;
-    border-radius: 50px;
-    position: absolute;
-  }
-  
-  .arrow-left {
-    left: 10px;
-  }
-
-  .arrow-left img {
-    transform: rotate(-180deg);
-  }
-  
-  .arrow-right {
-    right: 10px;
   }
 }

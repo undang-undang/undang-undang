@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Carousel, { ButtonGroupProps, DotProps } from 'react-multi-carousel'
 import { useResizeDetector } from 'react-resize-detector'
 
@@ -29,9 +29,17 @@ const responsive = {
 }
 
 const Order: React.FC = () => {
+  let refSlider: Carousel | null = null;
   const { width, ref } = useResizeDetector()
 
-  const ButtonGroup = ( { next, previous }: ButtonGroupProps ) => {
+  useEffect(() => {
+    setTimeout(() => {
+      refSlider && refSlider.goToSlide( 0 )
+    }, 100)
+  })
+
+
+  const ButtonGroup = ( { next, previous, goToSlide }: ButtonGroupProps ) => {
     return (
       <div>
         <div className='custom-arrow arrow-left' onClick={() => previous && previous()}><img src={Icons.arrow} alt='prev' /></div>
@@ -55,7 +63,7 @@ const Order: React.FC = () => {
   const renderSteps = () => {
     return orders.steps.map(order => (
       <div key={order.title} className='order-step'>
-        <div className='icon f-center'>
+        <div className='icon'>
           <img src={order.icon} alt='' />
         </div>
         <h3>{order.title}</h3>
@@ -65,7 +73,7 @@ const Order: React.FC = () => {
   }
   
   const renderOrderSteps = () => {
-    if (width && width < 1025) {
+    if (width && width < 465) {
       return (
         <div className='carousel-container'>
           <Carousel
@@ -96,7 +104,6 @@ const Order: React.FC = () => {
       <div key={price.tier} className='carousel-items'>
         <div className='order-options'>
             { price.isBestDeal && <p className='best-deal'>Best Deal</p> }
-
             <div className='price'>
               <h3 className={price.type === 'Gold' ? 'gold' : ''}>{ price.type }</h3>
               <div className='f-center'>
@@ -124,6 +131,7 @@ const Order: React.FC = () => {
       return (
         <div className='carousel-container'>
           <Carousel
+            ref={slider => refSlider = slider}
             responsive={responsive}
             infinite
             swipeable
@@ -132,6 +140,7 @@ const Order: React.FC = () => {
             customButtonGroup={<ButtonGroup />}
             customDot={<CustomDot />}
             arrows={false}
+            centerMode={!!(width && width > 464)}
           >
           {renderList()}
         </Carousel>
