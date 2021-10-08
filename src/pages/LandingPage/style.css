@@ -20,6 +20,21 @@
   --footer-bg: #61C0BF;
   --header-bg: #fff;
   --shadow: 0px 18px 29px -13px rgb(0 0 0 / 28%);
+  --font-size: 24px;
+}
+
+/* @media screen and (max-width: 464px) {
+  :root {
+    --font-size: 24px;
+  }
+} */
+
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
 }
 
 h1 {

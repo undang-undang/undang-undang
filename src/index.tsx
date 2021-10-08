@@ -1,14 +1,14 @@
-import React, {Suspense} from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './style.css';
 
 ReactDOM.render(
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>,
-  <Suspense fallback={<div style={{ width: '100vw', height: '100vh', background: 'red', position: 'fixed' }}></div>}>
+  <Suspense fallback={ <div style={ { width: '100vw', height: '100vh', background: 'red', position: 'fixed' } }></div> }>
 
     <App />
   </Suspense>,

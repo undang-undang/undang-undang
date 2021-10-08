@@ -1,0 +1,92 @@
+.cover {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.cover::after {
+  content: '';
+  position: fixed;
+  width: 100vw;
+  height: 50vh;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(185, 185, 71);
+  z-index: 1;
+  /* animation: slideDown-cover 1500ms ease-in-out forwards; */
+  animation-delay: 200ms;
+}
+
+.cover::before {
+  content: '';
+  position: fixed;
+  width: 100vw;
+  height: 50vh;
+  top: 0;
+  left: 0;
+  background-color: pink;
+  z-index: 1;
+  /* animation: slideUp-cover 1500ms ease-in-out forwards; */
+}
+
+.cover-content {
+  z-index: 2;
+}
+
+.receiver {
+  position: absolute;
+  left: 25vw;
+  top: 15vh;
+}
+
+.notif {
+  position: fixed;
+  background-color: rebeccapurple;
+  color: white;
+  right: 1rem;
+  top: 1rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.notif p {
+  font-size: .6rem;
+}
+
+.opening {
+  height: 100vh;
+  width: 100%;
+  background-color: wheat;
+}
+
+.countdown {
+  display: flex;
+  border: 1px solid red;
+  border-radius: 8px;
+}
+
+.countdown-time {
+  border: 1px solid red;
+  margin: 16px;
+}
+
+@keyframes slideUp-cover {
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+
+@keyframes slideDown-cover {
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.cover button {
+  background-color: rgb(100, 0, 0);
+  border-radius: 8px;
+  /* animation: slideUp-cover 1500ms ease-in-out forwards; */
+}
