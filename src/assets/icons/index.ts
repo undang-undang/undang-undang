@@ -27,6 +27,9 @@ import shipping from 'assets/icons/order/shipping.svg';
 import arrow from 'assets/icons/arrow.svg';
 import love from 'assets/icons/love.svg';
 
+import soundOn from 'assets/icons/sound-on.svg';
+import soundOff from 'assets/icons/sound-off.svg';
+
 export {
   // why us
   customizeable,
@@ -58,5 +61,9 @@ export {
 
   // util
   arrow,
-  love
+  love,
+
+  //theme,
+  soundOn,
+  soundOff,
 }

@@ -4,6 +4,10 @@ import Wishes from './Wishes'
 import Music from './Music'
 import CoupleInfo from './CoupleInfo'
 import EventInfo from './EventInfo'
+import LoveStory from './LoveStory'
+import PhotoGallery from './PhotoGallery'
+import WeddingVideo from './WeddingVideo'
+import Cover from './Cover'
 
 export {
   Countdown,
@@ -11,5 +15,9 @@ export {
   Wishes,
   Music,
   CoupleInfo,
-  EventInfo
+  EventInfo,
+  LoveStory,
+  PhotoGallery,
+  WeddingVideo,
+  Cover
 }

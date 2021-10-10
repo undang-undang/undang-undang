@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 
 import {
   Countdown,
   Wishes,
-  GMaps,
   Music,
   CoupleInfo,
-  EventInfo
+  EventInfo,
+  // LoveStory,
+  // PhotoGallery,
+  // WeddingVideo
 } from '../components'
 import './style.css'
+
+const PhotoGallery = lazy(() => import('../components/PhotoGallery'))
+const LoveStory = lazy(() => import('../components/LoveStory'))
+const WeddingVideo = lazy(() => import('../components/WeddingVideo'))
 
 const Groom = {
   nickName: 'Dylan',
@@ -60,13 +66,13 @@ const Bunga: React.FC = () => {
         groomInfo={ Groom }
         brideInfo={ Bride }
       />
-
       <EventInfo />
-
+      <Suspense fallback={ <div></div> }>
+        <LoveStory />
+        <WeddingVideo videoId='dABo_DCIdpM' />
+        <PhotoGallery />
+      </Suspense>
       <Wishes />
-
-      <GMaps />
-
 
 
       {/* { invitationCover() } */ }
